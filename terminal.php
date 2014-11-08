@@ -22,6 +22,13 @@ if(empty($command)) {
         case "ssh 192.168.0.107":
             $result = "sshed";
             break;
+        case "cat ftp.txt":
+            $result = "
+ftp server: 129.124.65.8
+user: asshole
+pass: GOD
+            ";
+            break;
         default:
             $error = true;
     }
