@@ -30,30 +30,50 @@
         $('body').terminal(function (command, term) {
             //term.push(function(command, term) {
             term.pause();
-            $.jrpc("terminal.php",
-                    "query",
-                    [command],
-                    function (data) {
-                        term.resume();
-                        if (data.error && data.error.message) {
-                            term.error(data.error.message);
-                        } else {
-                            if (typeof data.result == 'boolean') {
-                                term.echo(data.result ? 'success' : 'fail');
-                            } else {
-                                var len = data.result.length;
-                                for (var i = 0; i < len; ++i) {
-                                    term.echo(data.result[i].join(' | '));
-                                }
-                            }
+//            $.jrpc("terminal.php",
+//                    "query",
+//                    [command],
+//                    function (data) {
+//                        console.log(data.error.message);
+//                        term.resume();
+//                        if (data.error && data.error.message) {
+//                            term.error(data.error.message);
+//                        } else {
+//                            if (typeof data.result == 'boolean') {
+//                                term.echo(data.result ? 'success' : 'fail');
+//                            } else {
+//                                var len = data.result.length;
+//                                for (var i = 0; i < len; ++i) {
+//                                    term.echo(data.result[i].join(' | '));
+//                                }
+//                            }
+//                        }
+//                    },
+//                    function (xhr, status, error) {
+//                        term.error(error);
+//                    });
+            $.ajax({
+                type: "POST",
+                url: "terminal.php",
+                data: [command],
+                dataType: "json"
+            }).done(function( data ) {
+                if(data.error) {
+                    term.error(data.error);
+                } else {
+                    if (typeof data.result == 'boolean') {
+                        term.echo(data.result ? 'success' : 'fail');
+                    } else {
+                        var len = data.result.length;
+                        for (var i = 0; i < len; ++i) {
+                            term.echo(data.result[i].join(' | '));
                         }
-                    },
-                    function (xhr, status, error) {
-                        term.error('Undefined command');
-                    });
+                    }
+                }
+            });
             term.resume();
         }, {
-            greetings: "",
+            greetings: "W3lc0m3 t0 th3 H4<k5U51 T3rm1n4l, 3nj0y :)",
             prompt: "~root$ ",
             onBlur: function () {
                 // prevent loosing focus
