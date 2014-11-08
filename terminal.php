@@ -1,4 +1,5 @@
 <?php
+session_start();
 header('Content-Type: application/json');
 $command = htmlspecialchars(file_get_contents('php://input'));
 $response = new StdClass();
@@ -32,7 +33,7 @@ if(isset($error)) {
     ];
 } else {
     $response = [
-        'response' => $result
+        'response' => $result,
     ];
 }
 

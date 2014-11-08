@@ -30,20 +30,24 @@
         $('body').terminal(function (command, term) {
             //term.push(function(command, term) {
             term.pause();
-            $.ajax({
-                type: "POST",
-                url: "terminal.php",
-                data: command,
-                dataType: "json"
-            }).done(function( data ) {
-                if(data.error) {
-                    term.error(data.error);
-                } else if(data.response == "sshed") {
-                    term.set_prompt("~SSH@192.168.0.107> ");
-                } else {
-                    term.echo(data.response);
-                }
-            });
+            if(command == "exit") {
+                term.set_prompt("~root$ ");
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "terminal.php",
+                    data: command,
+                    dataType: "json"
+                }).done(function (data) {
+                    if (data.error) {
+                        term.error(data.error);
+                    } else if (data.response == "sshed") {
+                        term.set_prompt("~SSH@192.168.0.107> ");
+                    } else {
+                        term.echo(data.response);
+                    }
+                });
+            }
             term.resume();
         }, {
             greetings: "W3lc0m3 t0 th3 H4<k5U51 T3rm1n4l, 3nj0y :)",
