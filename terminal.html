@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HackSUSI - Terminal</title>
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="jquery.terminal-0.8.8.min.js"></script>
+    <link rel="stylesheet" href="jquery.terminal.css"/>
+    <style>
+        * {
+            color: #00e900 !important;
+            font-size: 20px !important;
+            line-height: 30px !important;
+        }
+    </style>
+</head>
+<body>
+<div class="terminal-output">
+    <pre style="line-height: 20px !important">
+  _   _            _     ____  _   _ ____ ___
+ | | | | __ _  ___| | __/ ___|| | | / ___|_ _|
+ | |_| |/ _` |/ __| |/ /\___ \| | | \___ \| |
+ |  _  | (_| | (__|   <  ___) | |_| |___) | |
+ |_| |_|\__,_|\___|_|\_\|____/ \___/|____/___|
+    </pre>
+</div>
+<script>
+    jQuery(document).ready(function ($) {
+        var id = 1;
+        $('body').terminal(function (command, term) {
+            //term.push(function(command, term) {
+            term.pause();
+            $.jrpc("terminal.php",
+                    "query",
+                    [command],
+                    function (data) {
+                        term.resume();
+                        if (data.error && data.error.message) {
+                            term.error(data.error.message);
+                        } else {
+                            if (typeof data.result == 'boolean') {
+                                term.echo(data.result ? 'success' : 'fail');
+                            } else {
+                                var len = data.result.length;
+                                for (var i = 0; i < len; ++i) {
+                                    term.echo(data.result[i].join(' | '));
+                                }
+                            }
+                        }
+                    },
+                    function (xhr, status, error) {
+                        term.error('Undefined command');
+                    });
+            term.resume();
+        }, {
+            greetings: "",
+            prompt: "~root$ ",
+            onBlur: function () {
+                // prevent loosing focus
+                return false;
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
