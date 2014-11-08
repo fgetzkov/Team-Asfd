@@ -1,0 +1,427 @@
+/* CSS Document */
+table.healthinsurance {
+	border-style: solid;
+	
+	border-width: 10px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	background-color: #D0D0D0;
+}
+
+td.healthinsured 
+{
+	background-color: #52B419;		
+}
+td.headerline
+{
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: small; 
+	BACKGROUND-COLOR: #E0F3B0;
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.login {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding: 10px;
+}
+div.messageclass
+{
+	color:#707070;
+	background-color:#D0FFD0;
+	text-align:center;
+	font-weight:normal;
+	padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+div.new_group_div span.new_group_span 
+{
+	cursor:pointer;
+	color: #333333;
+	/*padding-left: 10px;*/
+	/*background: #333333;*/
+	padding-left: 13px;
+	background: url(../img/plus.gif) no-repeat 0 50%;
+	background-color: #E7E7E7;
+}
+table.fixed_group_table
+{
+	background-color: #E7E7E7;
+}
+
+FIELDSET.pages 
+{
+	BORDER-RIGHT: 0px; 
+	PADDING-RIGHT: 0px; 
+	BORDER-TOP: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	OVERFLOW: hidden; 
+	BORDER-LEFT: 0px; 
+	WIDTH: 100%; 
+	COLOR: #000; 
+	PADDING-TOP: 0px; 
+	BORDER-BOTTOM: 0px 
+}
+FIELDSET.pages P 
+{
+	PADDING-RIGHT: 5px; 
+	DISPLAY: inline; 
+	PADDING-LEFT: 5px; 
+	FONT-SIZE: 0.69em; 
+	BACKGROUND: #ececec; 
+	FLOAT: left; 
+	PADDING-BOTTOM: 5px; 
+	MARGIN: 0px 5px 0px 0px; 
+	WIDTH: 20em; 
+	PADDING-TOP: 5px; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	TEXT-ALIGN: center 
+}
+FIELDSET.pages P.pages 
+{
+	WIDTH: 15em 
+}
+FIELDSET.pages SELECT 
+{
+	FONT-SIZE: 1em; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif 
+}
+FIELDSET.pages BUTTON 
+{
+	BORDER-RIGHT: 0px; 
+	BORDER-TOP: 0px; 
+	BACKGROUND: none transparent scroll repeat 0% 0%; 
+	BORDER-LEFT: 0px; 
+	WIDTH: 6px; 
+	CURSOR: pointer; 
+	BORDER-BOTTOM: 0px; 
+	HEIGHT: 16px 
+}
+FIELDSET.pages BUTTON.prev 
+{
+	MARGIN-RIGHT: 5px 
+}
+FIELDSET.pages BUTTON.next 
+{
+	MARGIN-LEFT: 5px 
+}
+FIELDSET.pages BUTTON IMG 
+{
+	DISPLAY: block; 
+	MARGIN: 0px auto; 
+	WIDTH: 6px; 
+	HEIGHT: 11px 
+}
+
+
+body  { background-color: #ffffff; margin: 2px 10px 0 10px}
+
+.greyType1 { background-color: #F1F1F1;}
+.greyType2 { background-color: #E5E5E5;}
+.white { background-color: #FFFFFF;}
+.greenType1 { background-color: #E0F3B0;}
+.greenType2 { background-color: #BFE476;}
+.greenType3 { background-color: #52B419;}
+
+
+table.headLine {
+	background-color: #E0F3B0;
+	background-image:url(../img/greenType1.gif);
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-color: #BFE476;
+	border-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+div.validationsummary 
+{
+	color:#C00000;
+	text-align:center;
+	font-weight:normal;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+ul.home li {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding-top: 10px;
+	padding-right: 10px;
+	list-style-type: disk;
+}
+
+ul li {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+/*	color: #000000; */
+	text-decoration: none;
+	line-height: normal;
+	padding-top: 2px;
+	padding-right: 10px;
+	list-style-type: disk;
+}
+
+ul li.current {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #3FAC00;
+	text-decoration: none;
+	line-height: normal;
+	padding-top: 2px;
+	padding-right: 10px;
+	list-style-type: disk;
+}
+
+a {
+	text-decoration: none;
+	color:  #000000;
+	}
+a:visited {
+	color:  #000000;
+	}
+a:active {
+	color:  #000000;
+	}
+a:hover {
+	color: #000000;
+	text-decoration: underline;
+	}
+
+table.green { 
+	background-color: #52B419;
+	background-image:url(../img/green_grad.gif);
+	background-repeat: repeat-x;
+}
+table.greenType1 {
+	background-color: #E0F3B0;
+	background-image:url(../img/greenType1.gif);
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-color: #BFE476;
+	border-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+table.greenType2 {
+	background-color: #E0F3B0;
+	background-image:url(../img/greenType1.gif);
+	background-repeat: repeat-x;
+}
+table.grey { background-color: #F1F1F1;}
+table.black { background-color: #333333;}
+
+div.separator {
+	line-height: 10px;
+}
+
+div.dataSeparator {
+	line-height: 18px;
+}
+
+table.headerInfo {
+	border-style: solid;
+	border-color: #E5E5E5;
+	border-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	background-color: #F1F1F1;
+}
+
+table.messages {
+	border-style: solid;
+	border-color: #BFE476;
+	border-width: 1px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	background-color: #E0F3B0;
+}
+
+.header {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding: 10px;
+}
+.copyText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #999999;
+	text-decoration: none;
+	line-height: normal;
+	padding-top: 4px;
+}
+.copyText A:visited{color: #999999; text-decoration: none;}
+.copyText A:active {color: #999999; text-decoration: none;}
+.copyText A:hover {color: #999999; text-decoration: underline;}
+.copyText A:link {color: #999999; text-decoration: none;}
+
+.simpleText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.simpleText A:visited{color: #000000; text-decoration: none;}
+.simpleText A:active {color: #000000; text-decoration: none;}
+.simpleText A:hover {color: #000000; text-decoration: underline;}
+.simpleText A:link {color: #000000; text-decoration: none;}
+
+.messageGeneralText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: 140%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.messageGeneralText A:visited{color: #808080; text-decoration: none;}
+.messageGeneralText A:active {color: #808080; text-decoration: none;}
+.messageGeneralText A:hover {color: #808080; text-decoration: underline;}
+.messageGeneralText A:link {color: #808080; text-decoration: none;}
+
+.messageValueText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	font-style: normal;
+	color: #3FAC00;
+	text-decoration: none;
+	line-height: normal;
+}
+.messageExtraText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+}
+.messageText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding-top: 4px;
+}
+
+
+
+.messageText A:visited{color: #3FAC00; text-decoration: none;}
+.messageText A:active {color: #3FAC00; text-decoration: none;}
+.messageText A:hover {color: #3FAC00; text-decoration: underline;}
+.messageText A:link {color: #3FAC00; text-decoration: none;}
+
+.messageSender {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	font-style: normal;
+	color: #3FAC00;
+	text-decoration: none;
+	line-height: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.messageSender A:visited{color: #3FAC00; font-weight: normal; text-decoration: none;}
+.messageSender A:active {color: #3FAC00; text-decoration: none;}
+.messageSender A:hover {color: #3FAC00; text-decoration: underline;}
+.messageSender A:link {color: #3FAC00; text-decoration: none;}
+
+.newMail {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	font-style: normal;
+	color: #3FAC00;
+	text-decoration: none;
+	line-height: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.newMail A:visited{color: #3FAC00; text-decoration: none;}
+.newMail A:active {color: #3FAC00; text-decoration: none;}
+.newMail A:hover {color: #3FAC00; text-decoration: underline;}
+.newMail A:link {color: #3FAC00; text-decoration: none;}
+
+.navigationText {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navigationText A:visited{color: #000000; text-decoration: none;}
+.navigationText A:active {color: #000000; text-decoration: none;}
+.navigationText A:hover {color: #000000; text-decoration: underline;}
+.navigationText A:link {color: #000000; text-decoration: none;}
+
+.navigationItem {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	font-style: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: normal;
+	padding-left: 20px;
+	padding-top: 6px;
+}
+.navigationItem A:visited{color: #FFFFFF; text-decoration: none;}
+.navigationItem A:active {color: #FFFFFF; text-decoration: none;}
+.navigationItem A:hover {color: #FFFFFF; text-decoration: underline;}
+.navigationItem A:link {color: #FFFFFF; text-decoration: none;}
