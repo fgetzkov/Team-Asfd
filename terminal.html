@@ -43,6 +43,10 @@
                         term.error(data.error);
                     } else if (data.response == "sshed") {
                         term.set_prompt("~SSH@192.168.0.107> ");
+                    } else if (data.response == "sshed2") {
+                        term.set_prompt("~SSH@129.124.65.8> ");
+                    } else if (data.response == "mysqled") {
+                        term.set_prompt("~SSH@129.124.65.8 mysql> ");
                     } else {
                         term.echo(data.response);
                     }
